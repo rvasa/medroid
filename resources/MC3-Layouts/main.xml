@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView android:id="@+id/faceImageView"
+		android:layout_width="wrap_content" android:onClick="flipImage"
+		android:src="@drawable/clear_einstein"
+		android:layout_height="wrap_content"></ImageView>
+	<RelativeLayout android:id="@+id/RelativeLayout1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:padding="5dp" android:orientation="vertical">
+		<Button android:id="@+id/aboutMeButton" android:layout_height="wrap_content"
+			android:onClick="showAboutMessage" android:layout_width="wrap_content"
+			android:text="About Me" android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"></Button>
+		<TextView android:textSize="28dp" android:layout_height="wrap_content"
+			android:id="@+id/textView1" android:layout_width="wrap_content"
+			android:gravity="right"
+			android:text="Albert Einstein" android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"></TextView>
+	</RelativeLayout>
+</LinearLayout>
